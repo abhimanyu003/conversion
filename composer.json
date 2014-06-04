@@ -1,0 +1,20 @@
+{
+    "name": "abhimanyusharma003/conversion",
+    "description": "",
+    "authors": [
+        {
+            "name": "Abhimanyu Sharma",
+            "email": "abhimanyusharma003@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support":"~4.1",
+    },
+    "autoload": {
+        "psr-0": {
+            "Abhimanyusharma003\\Conversion": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
