@@ -25,7 +25,7 @@ Library help to convert units.
 * Add below line to `composer.json `
 
 ```php
-    "abhimanyusharma003/laravel-facebook": "dev-master"
+"abhimanyusharma003/laravel-facebook": "dev-master"
 ```
 
 * Run `composer update` or `composer install `
@@ -33,36 +33,32 @@ Library help to convert units.
 * Open `app/config/app.php` and add the service provider to your `providers` array.
 		
 ```php
-    'providers' => array(
-	 	'Abhimanyusharma003\Conversion\ConversionServiceProvider',
-    )
+// ...
+'Abhimanyusharma003\Conversion\ConversionServiceProvider',
+ // ...
 ```
 
 ## How to use
 
 
 ```php
-	Conversion::convert($value,'type')->to('type');
+Conversion::convert($value,'type')->to('type');
 ```
 
 Formating results
 
 ```php
-	Conversion::convert($value,'type')->to('type')->format(int decimal,'decimal modifier','thousand modifer');
+Conversion::convert($value,'type')->to('type')->format(int decimal,'decimal modifier','thousand modifer');
 ```
 
 ## Example
 
 * Converting MB to kb
 
-```php
-    Conversion::convert(1, 'MB')->to('kB'); // output 1,024.00 ( two decimal place )
 ```
-
-* Formatting output
-
-```php
-    Conversion::convert(1, 'MB')->to('kB')->format(0,'.',','); // output 1,024 ( no decimal place )
+Conversion::convert(1, 'MB')->to('kB'); // output 1,024.00 ( two decimal place )
+// Formatting the output
+Conversion::convert(1, 'MB')->to('kB')->format(0,'.',','); // output 1,024 ( no decimal place )
 ```
 
 ## Conversion Chart
