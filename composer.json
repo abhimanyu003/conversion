@@ -1,10 +1,16 @@
 {
     "name": "abhimanyusharma003/conversion",
-    "description": "",
+    "description": "Laravel Unit Conversion",
+     "keywords": [
+         "laravel", "uint", "measurements", "conversion"
+     ],
+    "homepage":    "https://github.com/abhimanyusharma003/conversion",
+    "license": "MIT",
     "authors": [
         {
             "name": "Abhimanyu Sharma",
-            "email": "abhimanyusharma003@gmail.com"
+            "email": "abhimanyusharma003@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
