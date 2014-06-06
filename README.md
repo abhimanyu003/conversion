@@ -25,7 +25,7 @@ Library help to convert units.
 * Add below line to `composer.json `
 
 ```php
-"abhimanyusharma003/laravel-facebook": "dev-master"
+"abhimanyusharma003/conversion": "dev-master"
 ```
 
 * Run `composer update` or `composer install `
