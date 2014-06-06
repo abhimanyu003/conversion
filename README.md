@@ -24,15 +24,17 @@ Library help to convert units.
 
 * Add below line to `composer.json `
 
-```php
+```json
+// ...
 "abhimanyusharma003/conversion": "dev-master"
+ // ...
 ```
 
 * Run `composer update` or `composer install `
 
 * Open `app/config/app.php` and add the service provider to your `providers` array.
 		
-```php
+```json
 // ...
 'Abhimanyusharma003\Conversion\ConversionServiceProvider',
  // ...
@@ -45,21 +47,50 @@ Library help to convert units.
 Conversion::convert($value,'type')->to('type');
 ```
 
-Formating results
+Formatting results use
 
 ```php
-Conversion::convert($value,'type')->to('type')->format(int decimal,'decimal modifier','thousand modifer');
+Conversion::convert($value,'type')->to('type')
+			->format(int decimal,'decimal modifier','thousand modifer');
 ```
 
 ## Example
 
 * Converting MB to kb
 
-```
+```php
+
 Conversion::convert(1, 'MB')->to('kB'); // output 1,024.00 ( two decimal place )
+
 // Formatting the output
 Conversion::convert(1, 'MB')->to('kB')->format(0,'.',','); // output 1,024 ( no decimal place )
+
 ```
+
+* Converting mm to cm
+
+```php
+
+Conversion::convert(1000,'mm')->to('cm');
+
+```
+
+* Converting mm to cm
+
+```php
+
+Conversion::convert(1000,'mm')->to('cm');
+
+```
+
+* Converting kg to g
+
+```php
+
+Conversion::convert(1,'kg')->to('g');
+
+```
+
 
 ## Conversion Chart
 
