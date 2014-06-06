@@ -24,7 +24,7 @@ Library help to convert units.
 
 * Add below line to `composer.json `
 
-```json
+```php
 // ...
 "abhimanyusharma003/conversion": "dev-master"
  // ...
@@ -34,7 +34,7 @@ Library help to convert units.
 
 * Open `app/config/app.php` and add the service provider to your `providers` array.
 		
-```json
+```php
 // ...
 'Abhimanyusharma003\Conversion\ConversionServiceProvider',
  // ...
