@@ -60,10 +60,10 @@ Conversion::convert($value,'type')->to('type')
 
 ```php
 
-Conversion::convert(1, 'MB')->to('kB'); // output 1,024.00 ( two decimal place )
+Conversion::convert(1, 'megabyte')->to('kilobyte'); // output 1,024.00 ( two decimal place )
 
 // Formatting the output
-Conversion::convert(1, 'MB')->to('kB')->format(0,'.',','); // output 1,024 ( no decimal place )
+Conversion::convert(1, 'megabyte')->to('kilobyte')->format(0,'.',','); // output 1,024 ( no decimal place )
 
 ```
 
@@ -94,151 +94,135 @@ Conversion::convert(1,'kg')->to('g');
 
 ## Conversion Chart
 
-### Acceleration
-    METRE_PER_SECOND_SQUARED = 'm/s^2';
-
-### Angle
-    TURN = 'turn';
-    RADIAN = 'rad';
-    DEGREE = 'deg';
-    GRADIAN = 'grad';
-
-### Area
-    	// Metric system
-    SQUARE_METRE = 'm^2';
-    HECTARE = 'ha';
-    SQUARE_KILOMETRE = 'km^2';
-    	// Imperial system
-    SQUARE_INCH = 'in^2';
-    SQUARE_FEET = 'ft^2';
-    SQUARE_YARD = 'yd^2';
-    ACRE = 'ac';
-    SQUARE_MILE = 'mi^2';
-
-### Storage
-    BIT = 'b';
-    BYTE = 'B';
-    KILOBIT = 'kb';
-    KILOBYTE = 'kB';
-    MEGABIT = 'Mb';
-    MEGABYTE = 'MB';
-    GIGABIT = 'Gb';
-    GIGABYTE = 'GB';
-    TERABIT = 'Tb';
-    TERABYTE = 'TB';
-    PETABIT = 'Pb';
-    PETABYTE = 'PB';
-
-### Current
-    STATAMPERE = 'statA';
-    MICROAMPERE = 'uA';
-    MILLIAMPERE = 'mA';
-    ABAMPERE = 'aA';
-    AMPERE = 'A';
-    KILOAMPERE = 'kA';
-
-### Fuel
-    	// Metric units
-    KILOMETRES_PER_LITRE = 'km/L';
-    LITRE_PER_100_KILOMETRES = 'L/100 km';
-    	// Imperial units
-    MILES_PER_GALLON = 'mpg';
-    	// US units
-    US_MILES_PER_GALLON = 'us mpg';
-
-### Length
-    	// Metric system
-    MILLIMETRE = 'mm';
-    CENTIMETRE = 'cm';
-    METRE = 'm';
-    KILOMETRE = 'km';
-    	// Imperial system
-    INCH = 'in';
-    FOOT = 'ft';
-    YARD = 'yd';
-    MILE = 'mi';
-    	// Other systems
-    NAUTICAL_MILE = 'nmi';
-
-### Mass
-    	// Metric system
-    MICROGRAM = 'mcg';
-    MILLIGRAM = 'mg';
-    GRAM = 'g';
-    KILOGRAM = 'kg';
-    METRIC_TON = 't';
-    	// Imperial system
-    OUNCE = 'oz';
-    POUND = 'lb';
-    STONE = 'st';
-    SHORT_TON = 's. t.';
-    LONG_TON = 'l. t.';
-### Pressure
-    PASCAL = 'Pa';
-    KILOPASCAL = 'kPa';
-    MEGAPASCAL = 'MPa';
-    BAR = 'bar';
-    MILLIMETRES_OF_MERCURY = 'mmHg';
-    ATMOSPHERE = 'atm';
-    INCHES_OF_MERCURY = 'inHg';
-    POUNDS_PER_SQUARE_INCH = 'psi';
-
-### Speed
-    	// Metric units
-    METRE_PER_SECOND = 'm/s';
-    KILOMETRES_PER_HOUR = 'km/h';
-    	// Imperial units
-    FEET_PER_SECOND = 'ft/s';
-    MILES_PER_HOUR = 'mph';
-   		// Other units
-    KNOT = 'kn';
-
-### Temperature
-    CELSIUS = 'C';
-    FAHRENHEIT = 'F';
-    KELVIN = 'K';
-
-### Time
-    NANOSECOND = 'ns';
-    MICROSECOND = 'us';
-    MILLISECOND = 'ms';
-    SECOND = 's';
-    MINUTE = 'min';
-    HOUR = 'hr';
-    DAY = 'd';
-    WEEK = 'wk';
-    MONTH = 'mo';
-    YEAR = 'a';
-    DECADE = 'decade';
-    CENTURY = 'century';
-    MILLENIUM = 'ka';
-
-### Voltage
-    VOLT = 'V';
-    KILOVOLT = 'KV';
-
-### Volume
-    	// Metric system
-    MILLILITRE = 'mL';
-    LITRE = 'L';
-    CUBIC_METRE = 'm^3';
-    	// Imperial system
-    GALLON = 'gal';
-    QUART = 'qt';
-    PINT = 'pt';
-    CUP = 'c';
-    TABLESPOON = 'tbsp';
-    TEASPOON = 'tsp';
-    	// US system
-    US_GALLON = 'us gal';
-    US_QUART = 'us qt';
-    US_PINT = 'us pt';
-    US_CUP = 'us c';
-    US_OUNCE = 'us oz';
-    US_TABLESPOON = 'us tbsp';
-    US_TEASPOON = 'us tsp';
-    	// Other units
-    CUBIC_INCH = 'in^3';
+## Acceleration         
+       'METRE_PER_SECOND_SQUARE
+                               
+## Angle                
+       'TURN'                  
+       'RADIAN'                
+       'DEGREE'                
+       'GRADIAN'               
+                               
+## Area                 
+       'SQUARE_METRE'          
+       'HECTARE'               
+       'SQUARE_KILOMETRE'      
+       'SQUARE_INCH'           
+       'SQUARE_FEET'           
+       'SQUARE_YARD'           
+       'ACRE'                  
+       'SQUARE_MILE'           
+                               
+## Storage              
+       'BIT'                   
+       'BYTE'                  
+       'KILOBIT'               
+       'KILOBYTE'              
+       'MEGABIT'               
+       'MEGABYTE'              
+       'GIGABIT'               
+       'GIGABYTE'              
+       'TERABIT'               
+       'TERABYTE'              
+       'PETABIT'               
+       'PETABYTE'              
+                               
+## Current              
+       'STATAMPERE'            
+       'MICROAMPERE'           
+       'MILLIAMPERE'           
+       'AMPERE'                
+       'ABAMPERE'              
+       'KILOAMPERE'            
+                               
+## Fuel                 
+       'KILOMETRES_PER_LITRE'  
+       'LITRE_PER_100_KILOMETRE
+       'MILES_PER_GALLON'      
+       'US_MILES_PER_GALLON'   
+                               
+## Length               
+       'MILLIMETRE'            
+       'CENTIMETRE'            
+       'METRE'                 
+       'KILOMETRE'             
+       'INCH'                  
+       'FOOT'                  
+       'YARD'                  
+       'MILE'                  
+       'NAUTICAL_MILE'         
+                               
+## Mass                 
+       'MICROGRAM'             
+       'MILLIGRAM'             
+       'GRAM'                  
+       'KILOGRAM'              
+       'METRIC_TON'            
+       'OUNCE'                 
+       'POUND'                 
+       'STONE'                 
+       'SHORT_TON'             
+       'LONG_TON'              
+                               
+## Pressure             
+       'PASCAL'                
+       'KILOPASCAL'            
+       'MEGAPASCAL'            
+       'BAR'                   
+       'MILLIMETRES_OF_MERCURY'
+       'INCHES_OF_MERCURY'     
+       'POUNDS_PER_SQUARE_INCH'
+       'ATMOSPHERE'            
+                               
+## Speed                
+       'METRE_PER_SECOND'      
+       'KILOMETRES_PER_HOUR'   
+       'FEET_PER_SECOND'       
+       'MILES_PER_HOUR'        
+       'KNOT'                  
+                               
+## Temperature          
+       'CELSIUS'               
+       'FAHRENHEIT'            
+       'KELVIN'                
+                               
+## Time                 
+       'NANOSECOND'            
+       'MICROSECOND'           
+       'MILLISECOND'           
+       'SECOND'                
+       'MINUTE'                
+       'HOUR'                  
+       'DAY'                   
+       'WEEK'                  
+       'MONTH'                 
+       'YEAR'                  
+       'DECADE'                
+       'CENTURY'               
+       'MILLENIUM'             
+                               
+## Voltage              
+       'VOLT'                  
+       'KILOVOLT'              
+                               
+## Volume               
+       'MILLILITRE'            
+       'LITRE'                 
+       'CUBIC_METRE'           
+       'GALLON'                
+       'QUART'                 
+       'PINT'                  
+       'TABLESPOON'            
+       'TEASPOON'              
+       'US_GALLON'             
+       'US_QUART'              
+       'US_PINT'               
+       'US_CUP'                
+       'US_OUNCE'              
+       'US_TABLESPOON'         
+       'US_TEASPOON'           
+       'CUBIC_INCH'            
+       'CUBIC_FOOT'            
 
 
 ## Contribute
