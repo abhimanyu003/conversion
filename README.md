@@ -51,7 +51,7 @@ Formatting results use
 
 ```php
 Conversion::convert($value,'type')->to('type')
-			->format(int decimal,'decimal modifier','thousand modifer');
+->format(int decimal,'decimal modifier','thousand modifer');
 ```
 
 ## Example
@@ -59,170 +59,157 @@ Conversion::convert($value,'type')->to('type')
 * Converting MB to kb
 
 ```php
-
 Conversion::convert(1, 'megabyte')->to('kilobyte'); // output 1,024.00 ( two decimal place )
 
 // Formatting the output
 Conversion::convert(1, 'megabyte')->to('kilobyte')->format(0,'.',','); // output 1,024 ( no decimal place )
-
 ```
 
 * Converting mm to cm
 
 ```php
-
-Conversion::convert(1000,'mm')->to('cm');
-
+Conversion::convert(1000,'millimetre')->to('centimetre');
 ```
 
-* Converting mm to cm
-
-```php
-
-Conversion::convert(1000,'mm')->to('cm');
-
-```
 
 * Converting kg to g
 
 ```php
-
-Conversion::convert(1,'kg')->to('g');
-
+Conversion::convert(1,'kilogram')->to('gram');
 ```
 
 
 ## Conversion Chart
 
 ## Acceleration         
-       'METRE_PER_SECOND_SQUARE
+       METRE_PER_SECOND_SQUARE
                                
 ## Angle                
-       'TURN'                  
-       'RADIAN'                
-       'DEGREE'                
-       'GRADIAN'               
+       TURN                  
+       RADIAN                
+       DEGREE                
+       GRADIAN               
                                
 ## Area                 
-       'SQUARE_METRE'          
-       'HECTARE'               
-       'SQUARE_KILOMETRE'      
-       'SQUARE_INCH'           
-       'SQUARE_FEET'           
-       'SQUARE_YARD'           
-       'ACRE'                  
-       'SQUARE_MILE'           
+       SQUARE_METRE          
+       HECTARE               
+       SQUARE_KILOMETRE      
+       SQUARE_INCH           
+       SQUARE_FEET           
+       SQUARE_YARD           
+       ACRE                  
+       SQUARE_MILE           
                                
 ## Storage              
-       'BIT'                   
-       'BYTE'                  
-       'KILOBIT'               
-       'KILOBYTE'              
-       'MEGABIT'               
-       'MEGABYTE'              
-       'GIGABIT'               
-       'GIGABYTE'              
-       'TERABIT'               
-       'TERABYTE'              
-       'PETABIT'               
-       'PETABYTE'              
+       BIT                   
+       BYTE                  
+       KILOBIT               
+       KILOBYTE              
+       MEGABIT               
+       MEGABYTE              
+       GIGABIT               
+       GIGABYTE              
+       TERABIT               
+       TERABYTE              
+       PETABIT               
+       PETABYTE              
                                
 ## Current              
-       'STATAMPERE'            
-       'MICROAMPERE'           
-       'MILLIAMPERE'           
-       'AMPERE'                
-       'ABAMPERE'              
-       'KILOAMPERE'            
+       STATAMPERE            
+       MICROAMPERE           
+       MILLIAMPERE           
+       AMPERE                
+       ABAMPERE              
+       KILOAMPERE            
                                
 ## Fuel                 
-       'KILOMETRES_PER_LITRE'  
-       'LITRE_PER_100_KILOMETRE
-       'MILES_PER_GALLON'      
-       'US_MILES_PER_GALLON'   
+       KILOMETRES_PER_LITRE  
+       LITRE_PER_100_KILOMETRE
+       MILES_PER_GALLON      
+       US_MILES_PER_GALLON   
                                
 ## Length               
-       'MILLIMETRE'            
-       'CENTIMETRE'            
-       'METRE'                 
-       'KILOMETRE'             
-       'INCH'                  
-       'FOOT'                  
-       'YARD'                  
-       'MILE'                  
-       'NAUTICAL_MILE'         
+       MILLIMETRE            
+       CENTIMETRE            
+       METRE                 
+       KILOMETRE             
+       INCH                  
+       FOOT                  
+       YARD                  
+       MILE                  
+       NAUTICAL_MILE         
                                
 ## Mass                 
-       'MICROGRAM'             
-       'MILLIGRAM'             
-       'GRAM'                  
-       'KILOGRAM'              
-       'METRIC_TON'            
-       'OUNCE'                 
-       'POUND'                 
-       'STONE'                 
-       'SHORT_TON'             
-       'LONG_TON'              
+       MICROGRAM             
+       MILLIGRAM             
+       GRAM                  
+       KILOGRAM              
+       METRIC_TON            
+       OUNCE                 
+       POUND                 
+       STONE                 
+       SHORT_TON             
+       LONG_TON              
                                
 ## Pressure             
-       'PASCAL'                
-       'KILOPASCAL'            
-       'MEGAPASCAL'            
-       'BAR'                   
-       'MILLIMETRES_OF_MERCURY'
-       'INCHES_OF_MERCURY'     
-       'POUNDS_PER_SQUARE_INCH'
-       'ATMOSPHERE'            
+       PASCAL                
+       KILOPASCAL            
+       MEGAPASCAL            
+       BAR                   
+       MILLIMETRES_OF_MERCURY
+       INCHES_OF_MERCURY     
+       POUNDS_PER_SQUARE_INCH
+       ATMOSPHERE            
                                
 ## Speed                
-       'METRE_PER_SECOND'      
-       'KILOMETRES_PER_HOUR'   
-       'FEET_PER_SECOND'       
-       'MILES_PER_HOUR'        
-       'KNOT'                  
+       METRE_PER_SECOND      
+       KILOMETRES_PER_HOUR   
+       FEET_PER_SECOND       
+       MILES_PER_HOUR        
+       KNOT                  
                                
 ## Temperature          
-       'CELSIUS'               
-       'FAHRENHEIT'            
-       'KELVIN'                
+       CELSIUS               
+       FAHRENHEIT            
+       KELVIN                
                                
 ## Time                 
-       'NANOSECOND'            
-       'MICROSECOND'           
-       'MILLISECOND'           
-       'SECOND'                
-       'MINUTE'                
-       'HOUR'                  
-       'DAY'                   
-       'WEEK'                  
-       'MONTH'                 
-       'YEAR'                  
-       'DECADE'                
-       'CENTURY'               
-       'MILLENIUM'             
+       NANOSECOND            
+       MICROSECOND           
+       MILLISECOND           
+       SECOND                
+       MINUTE                
+       HOUR                  
+       DAY                   
+       WEEK                  
+       MONTH                 
+       YEAR                  
+       DECADE                
+       CENTURY               
+       MILLENIUM             
                                
 ## Voltage              
-       'VOLT'                  
-       'KILOVOLT'              
+       VOLT                  
+       KILOVOLT              
                                
 ## Volume               
-       'MILLILITRE'            
-       'LITRE'                 
-       'CUBIC_METRE'           
-       'GALLON'                
-       'QUART'                 
-       'PINT'                  
-       'TABLESPOON'            
-       'TEASPOON'              
-       'US_GALLON'             
-       'US_QUART'              
-       'US_PINT'               
-       'US_CUP'                
-       'US_OUNCE'              
-       'US_TABLESPOON'         
-       'US_TEASPOON'           
-       'CUBIC_INCH'            
-       'CUBIC_FOOT'            
+       MILLILITRE            
+       LITRE                 
+       CUBIC_METRE           
+       GALLON                
+       QUART                 
+       PINT                  
+       TABLESPOON            
+       TEASPOON              
+       US_GALLON             
+       US_QUART              
+       US_PINT               
+       US_CUP                
+       US_OUNCE              
+       US_TABLESPOON         
+       US_TEASPOON           
+       CUBIC_INCH            
+       CUBIC_FOOT            
 
 
 ## Contribute
