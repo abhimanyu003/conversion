@@ -220,7 +220,7 @@ class Conversion {
         if ( ! isset(static::$conversionChart[strtoupper($unit)]))
         {
             throw new \Exception(sprintf(
-                'No conversation between "%s" and "%s" is defined.',
+                'No conversion between "%s" and "%s" is defined.',
                 static::$native,
                 $unit
             ));
