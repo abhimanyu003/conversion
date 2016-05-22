@@ -2,7 +2,7 @@
     "name": "abhimanyusharma003/conversion",
     "description": "Laravel Unit Conversion",
      "keywords": [
-         "laravel", "uint", "measurements", "conversion"
+         "laravel", "unit", "measurements", "conversion"
      ],
     "homepage":    "https://github.com/abhimanyusharma003/conversion",
     "license": "MIT",
