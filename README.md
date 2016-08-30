@@ -32,12 +32,16 @@ Library help to convert units.
 
 * Run `composer update` or `composer install `
 
-* Open `app/config/app.php` and add the service provider to your `providers` array.
+* Open `config/app.php` and add the service provider to your `providers` array.
 		
 ```php
-// ...
-'Abhimanyusharma003\Conversion\ConversionServiceProvider',
- // ...
+    Abhimanyu003\Conversion\ConversionServiceProvider::class
+```
+
+* Add Aliases
+
+```php
+    'Conversion'  => Abhimanyu003\Conversion\Facades\Conversion::class
 ```
 
 ## How to use
@@ -51,7 +55,7 @@ Formatting results use
 
 ```php
 Conversion::convert($value,'type')->to('type')
-->format(int decimal,'decimal modifier','thousand modifer');
+->format(int decimal,'decimal place modifier','thousand place modifer');
 ```
 
 ## Example
