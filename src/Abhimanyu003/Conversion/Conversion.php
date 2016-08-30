@@ -175,13 +175,13 @@ class Conversion
     }
 
     /**
-     * @param $quanity
+     * @param $quantity
      * @param $unit
      * @return Conversion
      */
-    public static function convert($quanity, $unit)
+    public function convert($quantity, $unit)
     {
-        return new Conversion($quanity, $unit);
+        return new Conversion($quantity, $unit);
     }
 
 
