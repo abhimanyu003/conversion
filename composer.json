@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Abhimanyusharma003\\Conversion": "src/"
+            "Abhimanyu003\\Conversion": "src/"
         }
     },
     "minimum-stability": "stable"
