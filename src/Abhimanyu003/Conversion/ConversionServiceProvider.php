@@ -1,9 +1,10 @@
-<?php namespace Abhimanyusharma003\Conversion;
+<?php namespace Abhimanyu003\Conversion;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
-class ConversionServiceProvider extends ServiceProvider {
+class ConversionServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -19,19 +20,17 @@ class ConversionServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->app['conversion'] = $this->app->share(function ($app)
-        {
+        $this->app['conversion'] = $this->app->share(function ($app) {
             return new Conversion;
         });
     }
 
     public function boot()
     {
-        $this->package('abhimanyusharma003/conversion');
-        $this->app->booting(function ()
-        {
+        $this->package('abhimanyu003/conversion');
+        $this->app->booting(function () {
             $loader = AliasLoader::getInstance();
-            $loader->alias('Conversion', 'Abhimanyusharma003\Conversion\ConversionFacade');
+            $loader->alias('Conversion', 'Abhimanyu003\Conversion\ConversionFacade');
         });
     }
 
@@ -42,7 +41,6 @@ class ConversionServiceProvider extends ServiceProvider {
      */
     public function provides()
     {
-        return array('conversion');
+        return ['conversion'];
     }
-
 }

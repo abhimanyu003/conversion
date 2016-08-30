@@ -1,8 +1,9 @@
-<?php namespace Abhimanyusharma003\Conversion;
+<?php namespace Abhimanyu003\Conversion;
 
 use Illuminate\Support\Facades\Facade;
 
-class ConversionFacade extends Facade {
+class ConversionFacade extends Facade
+{
 
     /**
      * Get the registered name of the component.
@@ -13,5 +14,4 @@ class ConversionFacade extends Facade {
     {
         return 'conversion';
     }
-
 }

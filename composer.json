@@ -1,10 +1,10 @@
 {
-    "name": "abhimanyusharma003/conversion",
+    "name": "abhimanyu003/conversion",
     "description": "Laravel Unit Conversion",
      "keywords": [
          "laravel", "unit", "measurements", "conversion"
      ],
-    "homepage":    "https://github.com/abhimanyusharma003/conversion",
+    "homepage":    "https://github.com/abhimanyu003/conversion",
     "license": "MIT",
     "authors": [
         {
