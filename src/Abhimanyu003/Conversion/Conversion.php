@@ -179,7 +179,7 @@ class Conversion
      * @param $unit
      * @return Conversion
      */
-    public function convert($quanity, $unit)
+    public static function convert($quanity, $unit)
     {
         return new Conversion($quanity, $unit);
     }
