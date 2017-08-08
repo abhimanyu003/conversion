@@ -212,6 +212,15 @@ class Conversion
 
 
     /**
+     * @return array
+     */
+    public function chart()
+    {
+        return static::$conversionChart;
+    }
+
+
+    /**
      * @param $unit
      * @return mixed
      * @throws \Exception
