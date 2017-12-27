@@ -22,7 +22,17 @@ Library help to convert units.
 
 ## Installation
 
-* Add below line to `composer.json `
+### Using `composer`
+
+Run this command using `composer`.
+
+```console
+composer require abhimanyusharma003/conversion
+```
+
+### Manually editing `composer.json`.
+
+* Or by adding this line below to `composer.json `
 
 ```php
 // ...
@@ -30,7 +40,15 @@ Library help to convert units.
  // ...
 ```
 
-* Run `composer update` or `composer install `
+* Then run `composer update` or `composer install` command.
+
+## Configuration
+
+### Laravel 5.5
+
+Nothing to do. This package use package auto-discovery feature.
+
+### Laravel 5.0, 5.1, 5.2, 5.3, and 5.4
 
 * Open `config/app.php` and add the service provider to your `providers` array.
 		
@@ -60,7 +78,7 @@ Conversion::convert($value,'type')->to('type')
 
 ## Example
 
-* Converting MB to kb
+### Converting MB to kb
 
 ```php
 Conversion::convert(1, 'megabyte')->to('kilobyte'); // output 1,024.00 ( two decimal place )
@@ -69,19 +87,17 @@ Conversion::convert(1, 'megabyte')->to('kilobyte'); // output 1,024.00 ( two dec
 Conversion::convert(1, 'megabyte')->to('kilobyte')->format(0,'.',','); // output 1,024 ( no decimal place )
 ```
 
-* Converting mm to cm
+### Converting mm to cm
 
 ```php
 Conversion::convert(1000,'millimetre')->to('centimetre');
 ```
 
-
-* Converting kg to g
+### Converting kg to g
 
 ```php
 Conversion::convert(1,'kilogram')->to('gram');
 ```
-
 
 ## Conversion Chart
 

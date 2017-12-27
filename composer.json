@@ -22,5 +22,16 @@
             "Abhimanyu003\\Conversion": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abhimanyu003\\Conversion\\ConversionServiceProvider"
+            ],
+            "aliases": {
+                "Conversion": "Abhimanyu003\\Conversion\\Facades\\Conversion"
+            }
+        }
+    }
 }
