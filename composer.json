@@ -22,8 +22,6 @@
             "Abhimanyu003\\Conversion": "src/"
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
