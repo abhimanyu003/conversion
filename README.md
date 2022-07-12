@@ -1,6 +1,6 @@
 ## Laravel Unit Conversion
 
-Library help to convert units.
+Library help to convert units. It was forked from abhimanyu003/conversion repository and updated to use with Laravel 9.
 
 ## Units supported
 
@@ -35,13 +35,13 @@ Library help to convert units.
 * Open `config/app.php` and add the service provider to your `providers` array.
 		
 ```php
-    Abhimanyu003\Conversion\ConversionServiceProvider::class
+    Zdanevych\Conversion\ConversionServiceProvider::class
 ```
 
 * Add Aliases
 
 ```php
-    'Conversion'  => Abhimanyu003\Conversion\Facades\Conversion::class
+    'Conversion'  => Zdanevych\Conversion\Facades\Conversion::class
 ```
 
 ## How to use

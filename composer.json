@@ -1,10 +1,10 @@
 {
-    "name": "abhimanyu003/conversion",
+    "name": "zdanevych/conversion",
     "description": "Laravel Unit Conversion",
      "keywords": [
          "laravel", "unit", "measurements", "conversion"
      ],
-    "homepage":    "https://github.com/abhimanyu003/conversion",
+    "homepage":    "https://github.com/zdanevych/conversion",
     "license": "MIT",
     "authors": [
         {
@@ -14,13 +14,26 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.*|~5.0"
+        "php": "^5.6|^7.0|^8.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-0": {
-            "Abhimanyu003\\Conversion": "src/"
+            "Zdanevych\\Conversion": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zdanevych\\Conversion\\ConversionServiceProvider"
+            ],
+            "aliases": {
+                "Conversion": "Zdanevych\\Conversion\\Facades\\Conversion"
+            }
+        }
+    }
 }

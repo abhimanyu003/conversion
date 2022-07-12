@@ -1,4 +1,4 @@
-<?php namespace Abhimanyu003\Conversion;
+<?php namespace Zdanevych\Conversion;
 
 class Conversion
 {

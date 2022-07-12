@@ -1,4 +1,4 @@
-<?php namespace Abhimanyu003\Conversion\Facades;
+<?php namespace Zdanevych\Conversion\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
